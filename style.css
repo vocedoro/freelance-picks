@@ -1,0 +1,19 @@
+:root{--ink:#1c1b18;--bg:#faf7f0;--green:#143d2b;--line:#ddd5c3;--accent:#a4492b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.65 Georgia,'Times New Roman',serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-underline-offset:3px}
+header.site{border-bottom:1px solid var(--line)}header.site .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding-top:16px;padding-bottom:16px;gap:8px}
+.brand{font-weight:700;font-size:1.25rem;color:var(--green);text-decoration:none;letter-spacing:.02em}
+nav a{margin-left:18px;font:15px system-ui,sans-serif;color:var(--ink);text-decoration:none}nav a:hover{color:var(--accent)}
+h1,h2,h3{line-height:1.2;color:var(--green)}h1{font-size:2.1rem;margin:1.2rem 0 .8rem}h2{font-size:1.4rem;margin-top:2.2rem}
+.kicker,.tag{font:600 12px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}
+.hero{padding:2rem 0 1rem;border-bottom:1px solid var(--line)}.lead{font-size:1.15rem}
+.checks,.checklist{padding-left:0;list-style:none}.checks li,.checklist li{padding:6px 0 6px 26px;border-bottom:1px dotted var(--line);position:relative}
+.checks li:before,.checklist li:before{content:"";position:absolute;left:4px;top:15px;width:10px;height:10px;border:2px solid var(--green)}
+.cards{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.card{display:block;padding:20px;border:1px solid var(--line);background:#fff;color:var(--ink);text-decoration:none}.card:hover{border-color:var(--green)}
+.card h3{margin:.4rem 0}.card p{margin:0;font-size:.95rem}
+.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.95rem}th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left}th{background:#efe8d6}
+.note{font-size:.9rem;border-left:3px solid var(--accent);padding-left:12px;margin-top:2rem}
+footer.site{margin-top:4rem;border-top:1px solid var(--line);background:#efe8d6;font:14px/1.5 system-ui,sans-serif;padding:20px 0}
+@media(max-width:600px){.cards{grid-template-columns:1fr}body{font-size:17px}h1{font-size:1.7rem}}
